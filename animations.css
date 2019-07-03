@@ -1,0 +1,39 @@
+
+
+#basketBall {  
+  margin-left: 100px;
+  width: 200px;  
+  height: 200px;  
+  background-image: url("https://www.freevector.com/uploads/vector/preview/19065/048.jpg");
+  background-size: cover;
+  border-radius: 50%;  
+  position: absolute;
+  bottom: 10em;
+  animation: bounce 1.5s infinite linear;
+}
+
+@keyframes bounce
+{
+		50%
+  {
+    bottom: 0em;
+    width: 200px;
+    height: 200px;
+  }
+  
+  60%
+  {
+    width: 220px;
+    height: 180px;
+  }
+  
+  70%
+  {
+    width: 200px;
+    height: 180px;
+  }
+	
+}
+
+
+
