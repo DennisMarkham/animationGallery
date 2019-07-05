@@ -1,0 +1,116 @@
+$eTopFi: 5px;
+$eLeftFi: 10px;
+$eTopSe: 12px;
+$eLeftSe: 4px;
+$eTopTh: 7px;
+$eLeftTh: 4px;
+
+#eye
+{
+  margin-left: 500px;
+  width: 50px;
+  height: 50px;
+  background-color: ivory;
+  border-style: solid;
+  border-radius: 50% 0%;
+  transform: rotate(45deg);
+}
+
+#pupil
+{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: black;
+  position: absolute;
+  top: $eTopFi;
+  left: $eLeftFi;
+  z-index: 1;
+  border-style: solid;
+  border-width: 6px;
+  border-color: blue;
+  animation: look 1.5s infinite linear;
+}
+
+@keyframes look
+{
+  20%
+  {
+    top:$eTopFi;
+    left:$eLeftFi;
+  }
+  
+  25%
+  {
+    top: $eTopSe;
+    left: $eLeftSe;
+  }
+  
+  45%
+  {
+    top: $eTopSe;
+    left: $eLeftSe;
+  }
+  
+  50%
+  {
+    top: $eTopTh;
+    left: $eLeftTh;
+  }
+  
+  70%
+  {
+    top: $eTopTh;
+    left: $eLeftTh;
+  }
+  
+  75%
+  {
+    top: 9px;
+    left: 1px;
+  }
+  
+  80%
+  {
+    top: $eTopFi;
+    left: $eLeftFi;
+  }
+}
+
+#basketBall {  
+  margin-left: 100px;
+  width: 200px;  
+  height: 200px;  
+  background-image: url("https://www.freevector.com/uploads/vector/preview/19065/048.jpg");
+  background-size: cover;
+  border-radius: 50%;  
+  position: absolute;
+  bottom: 10em;
+  animation: bounce 1.5s infinite linear;
+}
+
+@keyframes bounce
+{
+    50%
+  {
+    bottom: 0em;
+    width: 200px;
+    height: 200px;
+  }
+  
+  60%
+  {
+    width: 220px;
+    height: 180px;
+  }
+  
+  70%
+  {
+    width: 200px;
+    height: 180px;
+  }
+  
+}
+
+
+
