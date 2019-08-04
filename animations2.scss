@@ -87,15 +87,28 @@ $eLeftTh: 4px;
   background-size: cover;
   border-radius: 50%;  
   position: absolute;
-  bottom: 10em;
+  bottom: 250px;
   animation: bounce 1.5s infinite linear;
 }
 
+//added "lag" at the top to give it a more natural look, like it was
+//only bouncing against one surface, instead of two.
 @keyframes bounce
 {
-    50%
+  5%
   {
-    bottom: 0em;
+  bottom: 245px;
+  }
+
+  20%
+  {
+  bottom: 200px;
+  }
+
+    50%
+  
+  {
+    bottom: 0px;
     width: 200px;
     height: 200px;
   }
@@ -111,6 +124,16 @@ $eLeftTh: 4px;
     width: 200px;
     height: 180px;
   }
+
+80%
+{
+  bottom: 200px;
+}
+
+95%
+{
+  bottom: 245px;
+}
   
 }
 
