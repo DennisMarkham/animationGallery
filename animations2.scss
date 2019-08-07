@@ -7,6 +7,45 @@ $eLeftSe: 4px;
 $eTopTh: 7px;
 $eLeftTh: 4px;
 
+#fire
+{
+  width: 0;
+  height: 0;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-bottom: 50px solid orange;
+  z-index: -100;
+}
+
+#campfire
+{
+  margin-left: 700px;
+
+}
+
+//why do both the logs look rotated when one 1 of them is!?
+
+@mixin log
+{
+  height: 40px;
+  width: 100px;
+  background-color: brown;
+  border-style: solid;
+  border-width: 2px;
+}
+
+#log1
+{
+  @include log;
+
+}
+
+#log2
+{
+  @include log;
+  transform: rotate(-35deg);
+}
+
 #eye
 {
   margin-left: 500px;
