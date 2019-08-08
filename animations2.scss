@@ -8,25 +8,32 @@ $eTopTh: 7px;
 $eLeftTh: 4px;
 
 
-@mixin templateFire($property) {
+@mixin templateFire($size, $color) {
    width: 0;
   height: 0;
-  border-left: $property solid transparent;
-  border-right: $property solid transparent;
-  border-bottom: $property*2 solid orange;
-  border-radius: $property*0.8;
+  border-left: $size solid transparent;
+  border-right: $size solid transparent;
+  border-bottom: $size*2 solid $color;
+  border-radius: $size*0.8;
   transform: rotate(-33deg);
   }
 
   #fire
 {
-@include templateFire(50px);
+@include templateFire(50px, orange);
+position: absolute;
+top: -6em;
+left: -2em;
 
 }
 
 #subfire
 {
-  @include templateFire(20px);
+  @include templateFire(20px, red);
+  position: absolute;
+  top:3em;
+  left:-1em;
+  transform: rotate(15deg);
 }
 
 
