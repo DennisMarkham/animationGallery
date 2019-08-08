@@ -1,5 +1,42 @@
-#eye
-{
+/*I didn't really need to use SASS here, but figured I'd show I knew how*/
+#fire {
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 100px solid red;
+  border-radius: 40px;
+  position: absolute;
+  transform: rotate(-33deg);
+}
+
+#campfire {
+  margin-left: 700px;
+  transform: rotate(-45deg);
+}
+
+#log1 {
+  height: 40px;
+  width: 100px;
+  background-color: brown;
+  border-style: solid;
+  border-width: 2px;
+  transform: rotate(35deg);
+  z-index: -1;
+  position: absolute;
+  top: 1em;
+}
+
+#log2 {
+  height: 40px;
+  width: 100px;
+  background-color: brown;
+  border-style: solid;
+  border-width: 2px;
+  transform: rotate(-35deg);
+}
+
+#eye {
   margin-left: 500px;
   width: 50px;
   height: 50px;
@@ -9,8 +46,7 @@
   transform: rotate(45deg);
 }
 
-#pupil
-{
+#pupil {
   width: 20px;
   height: 20px;
   border-radius: 50%;
@@ -25,85 +61,74 @@
   animation: look 1.5s infinite linear;
 }
 
-@keyframes look
-{
-  20%
-  {
-    top:5px;
-    left:10px;
+@keyframes look {
+  20% {
+    top: 5px;
+    left: 10px;
   }
-  
-  25%
-  {
+  25% {
     top: 12px;
     left: 4px;
   }
-  
-  45%
-  {
+  45% {
     top: 12px;
     left: 4px;
   }
-  
-  50%
-  {
+  50% {
     top: 7px;
     left: 4px;
   }
-  
-  70%
-  {
+  70% {
     top: 7px;
     left: 4px;
   }
-  
-  75%
-  {
+  75% {
     top: 9px;
     left: 1px;
   }
-  
-  80%
-  {
+  80% {
     top: 5px;
     left: 10px;
   }
 }
-
-#basketBall {  
+#basketBall {
   margin-left: 100px;
-  width: 200px;  
-  height: 200px;  
+  width: 200px;
+  height: 200px;
   background-image: url("https://www.freevector.com/uploads/vector/preview/19065/048.jpg");
   background-size: cover;
-  border-radius: 50%;  
+  border-radius: 50%;
   position: absolute;
-  bottom: 10em;
+  bottom: 250px;
   animation: bounce 1.5s infinite linear;
 }
 
-@keyframes bounce
-{
-    50%
-  {
-    bottom: 0em;
+@keyframes bounce {
+  5% {
+    bottom: 245px;
+  }
+  20% {
+    bottom: 200px;
+  }
+  50% {
+    bottom: 0px;
     width: 200px;
     height: 200px;
   }
-  
-  60%
-  {
+  60% {
     width: 220px;
     height: 180px;
   }
-  
-  70%
-  {
+  70% {
     width: 200px;
     height: 180px;
   }
-  
+  80% {
+    bottom: 200px;
+  }
+  95% {
+    bottom: 245px;
+  }
 }
 
-
-
+/*# sourceMappingURL=animations.css.map */
